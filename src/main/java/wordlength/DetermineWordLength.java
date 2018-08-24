@@ -1,6 +1,7 @@
 package wordlength;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class DetermineWordLength {
@@ -8,7 +9,12 @@ public class DetermineWordLength {
     public static void main(String[] args) {
         String s="Today is the happiest day of my life";
         Map<Integer, String> wordNLength = findTheLargestWord(s);
-        System.out.println(wordNLength.get(1)+ " " + wordNLength.get(1));
+        Iterator it = wordNLength.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry pair = (Map.Entry)it.next();
+            System.out.println(pair.getKey() + " " + pair.getValue());
+
+        }
 
     }
 
