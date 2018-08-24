@@ -7,7 +7,7 @@ import java.util.Map;
 public class DetermineWordLength {
 
     public static void main(String[] args) {
-        String s="Today is the happiest day of my life";
+        String s="The cow jumped over the moon.";
         Map<Integer, String> wordNLength = findTheLargestWord(s);
         Iterator it = wordNLength.entrySet().iterator();
         while (it.hasNext()) {
