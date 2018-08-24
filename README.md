@@ -18,6 +18,8 @@ git clone https://github.com/mrahman53/EY.git
 
 mvn test 
 
+besides maven run, you can also run from the main method in DetermineWordLength.java
+
 ## Implementation Details:
 
 TestNG has been used for unit testing.

@@ -5,7 +5,7 @@
 
     <test name = "MTV Home">
         <classes>
-            <class name="wordlength.test.TestWordLength"/>
+            <class name="wordlength.UnitTest.TestWordLength"/>
         </classes>
     </test>
 

@@ -1,4 +1,4 @@
-package wordlength.test;
+package wordlength.UnitTest;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,9 +11,9 @@ public class TestWordLength {
 
     @Test
     public void largestWord(){
-        Map<String, Integer> actualMap = new HashMap<String, Integer>();
-        actualMap.put("happiest", 8);
-        Map<String, Integer> expectedMap = DetermineWordLength.findTheLargestWord("Today is the happiest day of my life");
+        Map<Integer, String> actualMap = new HashMap<Integer, String>();
+        actualMap.put(8, "happiest");
+        Map<Integer, String> expectedMap = DetermineWordLength.findTheLargestWord("Today is the happiest day of my life");
         Assert.assertEquals(actualMap, expectedMap );
     }
 }

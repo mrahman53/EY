@@ -7,13 +7,13 @@ public class DetermineWordLength {
 
     public static void main(String[] args) {
         String s="Today is the happiest day of my life";
-        Map<String, Integer> wordNLength = findTheLargestWord(s);
+        Map<Integer, String> wordNLength = findTheLargestWord(s);
         System.out.println(wordNLength.get(1)+ " " + wordNLength.get(1));
 
     }
 
-    public static Map<String, Integer> findTheLargestWord(String wordGiven){
-        Map<String, Integer> map = new HashMap<String, Integer>();
+    public static Map<Integer, String> findTheLargestWord(String wordGiven){
+        Map<Integer, String> map = new HashMap<Integer, String>();
         String st = "";
         String[] word=wordGiven.split(" ");
             for(int i=0;i<word.length;i++){
@@ -21,7 +21,7 @@ public class DetermineWordLength {
                     st=word[i];
                 }
             }
-            map.put(st,st.length());
+            map.put(st.length(), st);
         return map;
     }
 }
